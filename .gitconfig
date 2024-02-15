@@ -1,0 +1,20 @@
+[filter "lfs"]
+        required = true
+        clean = git-lfs clean %f
+        smudge = git-lfs smudge %f
+[user]
+        name = Ryan Frazier
+        email = ryan.frazier@nutanix.com
+[core]
+        editor = code --wait
+        autocrlf = false
+        safecrlf = false
+	pager = less -F -X
+[push]
+        default = simple
+
+
+[alias]
+
+[credential]
+	helper = store
