@@ -72,12 +72,14 @@ alias hosts='sudo vi /etc/hosts'
 alias helperserver='nodemon --inspect helper.js'
 alias serve='npm run serve'
 
-# ==== CURRENTLY NOT USED ALIAS ====
-# alias bashconfig='code ~/.bash_profile'
-# alias demo='cd ~/Documents/code/d2/'
-# alias demoserver='nodemon demo.js --require dotenv/config'
-# alias rundemo='npm run demo'
-
+# ===============================================
+#                  DOCKER ALIASES
+# ===============================================
+alias dc='docker compose'
+alias dcu='docker compose up -d' #Start Docker in detached mode
+alias dcd='docker compose down' #Stop Docker
+alias dcps='docker compose ps' # See what is running in Docker
+alias dchistory='history | grep docker'
 # ===============================================
 #                  RANDOM ALIASES
 # ===============================================
