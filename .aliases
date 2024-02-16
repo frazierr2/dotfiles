@@ -64,17 +64,19 @@ alias config='code ~/' #To VS Code into home directory to see all files that a l
 alias aliases='code ~/.aliases'
 alias zshconfig='code ~/.zshrc'
 alias refresh_z='source ~/.zshrc && echo "Refreshed"'
-alias bashconfig='code ~/.bash_profile'
 alias sudo_z='vi ~/.zshrc'
 
-alias demo='cd ~/Documents/code/d2/'
 alias helper='cd ~/Documents/code/helper/'
 alias hcode='cd ~/Documents/code/helper/ && code .'
 alias hosts='sudo vi /etc/hosts'
 alias helperserver='nodemon --inspect helper.js'
-alias demoserver='nodemon demo.js --require dotenv/config'
 alias serve='npm run serve'
-alias rundemo='npm run demo'
+
+# ==== CURRENTLY NOT USED ALIAS ====
+# alias bashconfig='code ~/.bash_profile'
+# alias demo='cd ~/Documents/code/d2/'
+# alias demoserver='nodemon demo.js --require dotenv/config'
+# alias rundemo='npm run demo'
 
 # ===============================================
 #                  RANDOM ALIASES
