@@ -13,7 +13,7 @@ alias gd='git diff'
 alias gm='git merge'
 alias go='git checkout'
 alias gob='git checkout -b'
-alias gom='git checkout develop'
+alias god='git checkout develop'
 alias gp='git push'
 alias gpfwl='git push --force-with-lease'
 alias gpu='git pull'
@@ -24,6 +24,13 @@ alias grc='git rebase --continue'
 alias grm='git rebase develop'
 alias grs='git rebase --skip'
 alias gs='git status'
+# Git Stash Commands
+alias gsl='git stash list'
+alias gswn='git stash push -u -m'
+# Git stash pop by stash number from [ git stash list ]
+pop()  {
+  git stash pop stash@{$1}
+}
 
 #
 #   GIT ALIAS FUNCTIONS
