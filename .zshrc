@@ -5,7 +5,8 @@ source ~/.aliases
 export ZSH="$HOME/.oh-my-zsh"
 
 # ZSH THEME
-ZSH_THEME="cobalt2"
+# ZSH_THEME="cobalt2"
+ZSH_THEME="robbyrussell"
 
 # ADDING SSH KEY (TRYING TO PREVENT REBOOT NEEDING NEW KEY)
 ssh-add -K 2>/dev/null;
@@ -37,3 +38,11 @@ source $ZSH/oh-my-zsh.sh
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/ryan.frazier/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# Using for Ghostty right now
+export EDITOR="vim"
+export VISUAL="vim"
+
+# Starship
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+eval "$(starship init zsh)"
